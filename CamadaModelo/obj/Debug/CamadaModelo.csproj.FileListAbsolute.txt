@@ -1,0 +1,17 @@
+C:\Users\Jeh\source\repos\ProjetoPimVIII\CamadaModelo\bin\Debug\CamadaModelo.dll
+C:\Users\Jeh\source\repos\ProjetoPimVIII\CamadaModelo\bin\Debug\CamadaModelo.pdb
+C:\Users\Jeh\source\repos\ProjetoPimVIII\CamadaModelo\obj\Debug\CamadaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Jeh\source\repos\ProjetoPimVIII\CamadaModelo\obj\Debug\CamadaModelo.dll
+C:\Users\Jeh\source\repos\ProjetoPimVIII\CamadaModelo\obj\Debug\CamadaModelo.pdb
+C:\Users\Jeh\source\repos\ProjetoPimVIII\CamadaModelo\obj\Debug\CamadaModelo.csproj.AssemblyReference.cache
+C:\Users\Jeh\source\repos\BackupProjetoPimVIII\CamadaModelo\bin\Debug\CamadaModelo.dll
+C:\Users\Jeh\source\repos\BackupProjetoPimVIII\CamadaModelo\bin\Debug\CamadaModelo.pdb
+C:\Users\Jeh\source\repos\BackupProjetoPimVIII\CamadaModelo\obj\Debug\CamadaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Jeh\source\repos\BackupProjetoPimVIII\CamadaModelo\obj\Debug\CamadaModelo.dll
+C:\Users\Jeh\source\repos\BackupProjetoPimVIII\CamadaModelo\obj\Debug\CamadaModelo.pdb
+C:\Users\Jeh\source\repos\PIMVIII_Testado\CamadaModelo\bin\Debug\CamadaModelo.dll
+C:\Users\Jeh\source\repos\PIMVIII_Testado\CamadaModelo\bin\Debug\CamadaModelo.pdb
+C:\Users\Jeh\source\repos\PIMVIII_Testado\CamadaModelo\obj\Debug\CamadaModelo.csproj.CoreCompileInputs.cache
+C:\Users\Jeh\source\repos\PIMVIII_Testado\CamadaModelo\obj\Debug\CamadaModelo.dll
+C:\Users\Jeh\source\repos\PIMVIII_Testado\CamadaModelo\obj\Debug\CamadaModelo.pdb
+C:\Users\Jeh\source\repos\PIMVIII_Testado\CamadaModelo\obj\Debug\CamadaModelo.csproj.AssemblyReference.cache

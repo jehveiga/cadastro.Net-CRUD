@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DAO">
+  <DataContextMoniker Name="/DAODataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a15f819-46f5-4348-820b-301e9706ad22" absoluteBounds="0.75, 4, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DAODataContext/Endereco" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5049a0c2-7650-448d-abf3-591c685290d5" absoluteBounds="0.765, 4.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="380053a2-c56a-4952-b688-221c21e96294" absoluteBounds="3.5, 4.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DAODataContext/Pessoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4020600f-c743-45e2-93e2-570d5a848caf" absoluteBounds="3.515, 4.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a16d71e4-0eb5-4625-961f-ef286902f3e8" absoluteBounds="6.25, 1.125, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DAODataContext/Pessoa_Telefone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4270e5b-d645-48d5-85f7-bed003ca7bfb" absoluteBounds="6.265, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90dca19b-17ca-4ade-9ec0-0bf9c2fbd06c" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DAODataContext/Telefone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e5fb1bf-2c99-4681-bc4f-db400581e5c9" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e25a8dd-a95a-4dab-b255-39fb5ae6e01d" absoluteBounds="0.75, 1.125, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/DAODataContext/Telefone_Tipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23260288-59c0-49da-a1cf-26c4b9794d73" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 5.03929768880208); (3.5 : 5.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DAODataContext/Endereco/endereco_pessoa" />
+      <nodes>
+        <classShapeMoniker Id="3a15f819-46f5-4348-820b-301e9706ad22" />
+        <classShapeMoniker Id="380053a2-c56a-4952-b688-221c21e96294" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.03929768880208); (7.25 : 5.03929768880208); (7.25 : 2.31899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DAODataContext/Pessoa/pessoa_pessoa_telefone" />
+      <nodes>
+        <classShapeMoniker Id="380053a2-c56a-4952-b688-221c21e96294" />
+        <classShapeMoniker Id="a16d71e4-0eb5-4625-961f-ef286902f3e8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.72199625651042); (6.25 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DAODataContext/Telefone/telefone_pessoa_telefone" />
+      <nodes>
+        <classShapeMoniker Id="90dca19b-17ca-4ade-9ec0-0bf9c2fbd06c" />
+        <classShapeMoniker Id="a16d71e4-0eb5-4625-961f-ef286902f3e8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DAODataContext/Telefone_Tipo/telefone_tipo_telefone" />
+      <nodes>
+        <classShapeMoniker Id="9e25a8dd-a95a-4dab-b255-39fb5ae6e01d" />
+        <classShapeMoniker Id="90dca19b-17ca-4ade-9ec0-0bf9c2fbd06c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

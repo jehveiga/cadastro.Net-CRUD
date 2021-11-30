@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PIM" Class="DAODataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=PIM;Integrated Security=True" SettingsObjectName="Pessoa.DAO.Properties.Settings" SettingsPropertyName="PIMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.endereco" Member="Endereco">
+    <Type Name="Endereco">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="logradouro" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="numero" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cep" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bairro" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cidade" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="endereco_pessoa" Member="Pessoa" ThisKey="id" OtherKey="endereco" Type="Pessoa" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pessoa" Member="Pessoa">
+    <Type Name="Pessoa">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="cpf" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="endereco" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="pessoa_pessoa_telefone" Member="Pessoa_Telefone" ThisKey="id" OtherKey="id_pessoa" Type="Pessoa_Telefone" />
+      <Association Name="endereco_pessoa" Member="Endereco1" ThisKey="endereco" OtherKey="id" Type="Endereco" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pessoa_telefone" Member="Pessoa_Telefone">
+    <Type Name="Pessoa_Telefone">
+      <Column Name="id_pessoa" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_telefone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="pessoa_pessoa_telefone" Member="Pessoa" ThisKey="id_pessoa" OtherKey="id" Type="Pessoa" IsForeignKey="true" />
+      <Association Name="telefone_pessoa_telefone" Member="Telefone" ThisKey="id_telefone" OtherKey="id" Type="Telefone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.telefone" Member="Telefone">
+    <Type Name="Telefone">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="numero" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ddd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tipo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="telefone_pessoa_telefone" Member="Pessoa_Telefone" ThisKey="id" OtherKey="id_telefone" Type="Pessoa_Telefone" />
+      <Association Name="telefone_tipo_telefone" Member="Telefone_Tipo" ThisKey="tipo" OtherKey="id" Type="Telefone_Tipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.telefone_tipo" Member="Telefone_Tipo">
+    <Type Name="Telefone_Tipo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="telefone_tipo_telefone" Member="Telefone" ThisKey="id" OtherKey="tipo" Type="Telefone" />
+    </Type>
+  </Table>
+</Database>
